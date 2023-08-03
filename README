@@ -1,0 +1,39 @@
+docker build -t oluwasetosin/visits:latest
+
+docker run   oluwasetosin/visits
+
+
+
+docker run <image name>  <command to execute --- optional, it override the default commad>
+
+docker ps
+
+docker ps --all
+
+docker run = docker create + docker start 
+
+docker run -d redis   // run in background
+
+docker start -a // attach comand line to display output
+
+docker logs <container id>
+
+docker kill <container id>
+docker stop <container id>
+
+docker exec -it <container id> <command>
+docker exec -it <container id> sh
+
+docker run -p 8080:8080 <image name>
+
+docker compose up
+
+docker-compose up -d // run in background
+
+docker-compose up --build // rebuilds the docker file
+
+docker compose down
+
+docker compose restart policies: "no, always, on-failure, unlsess-stopped"
+
+docker compose ps <from a docker.yml directory>

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+  visits:
+    build: .
+    ports:
+      - "4001:8081"
+    restart:  always

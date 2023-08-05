@@ -37,3 +37,7 @@ docker compose down
 docker compose restart policies: "no, always, on-failure, unlsess-stopped"
 
 docker compose ps <from a docker.yml directory>
+
+docker build -f Dockerfile.dev .
+
+docker run -p 3000:3000 -v /app/node_modules  -v $(pwd):/app <image_id>

@@ -41,3 +41,7 @@ docker compose ps <from a docker.yml directory>
 docker build -f Dockerfile.dev .
 
 docker run -p 3000:3000 -v /app/node_modules  -v $(pwd):/app <image_id>
+
+ docker run -it <container_id> npm run test
+
+ docker exec -it <running container id> npm run test
